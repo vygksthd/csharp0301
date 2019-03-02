@@ -16,7 +16,6 @@ namespace TypeCastExample1
             short d = (short)c;
             Console.WriteLine("Short : {0}", b);
             Console.WriteLine("Short : {0}", d);
-
         }
     }
 }
