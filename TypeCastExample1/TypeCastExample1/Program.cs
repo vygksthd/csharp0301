@@ -13,9 +13,22 @@ namespace TypeCastExample1
             short a = 10;
             int b = a;
             int c = 50000;
-            short d = (short)c;
+            //short d = (short)c;
             Console.WriteLine("Short : {0}", b);
-            Console.WriteLine("Short : {0}", d);
+            //Console.WriteLine("Short : {0}", d);
+
+            try
+            {
+                short d = checked((short)c);
+                Console.WriteLine("Short : {0}", d);
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine(e.Message);
+                Console.WriteLine("----------");
+                Console.WriteLine(e.StackTrace);
+
+            }
         }
     }
 }
