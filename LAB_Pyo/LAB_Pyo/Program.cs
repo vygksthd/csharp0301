@@ -10,15 +10,15 @@ namespace LAB_Pyo
     {
         static void Main(string[] args)
         {
-            ////과제 1
-            //for (int result = 1; result <= 10; result++)
-            //{
-            //    if(result % 2 == 0)
-            //    {
-            //        Console.Write("{0} ", result);
-            //    }
-            //}
-            //Console.WriteLine();
+            //과제 1
+            for (int result = 1; result <= 10; result++)
+            {
+                if (result % 2 == 0)
+                {
+                    Console.Write("{0} ", result);
+                }
+            }
+            Console.WriteLine();
 
 
             ////과제2
@@ -84,25 +84,25 @@ namespace LAB_Pyo
             //Console.WriteLine("10개의 숫자의 합 = {0}", ave);
 
 
-            //과제4
-            Console.WriteLine("숫자를 입력하세요. ");
-            string str = Console.ReadLine();
-            int m = 0;
-            bool parsed = Int32.TryParse(str, out m);
+            ////과제4
+            //Console.WriteLine("숫자를 입력하세요. ");
+            //string str = Console.ReadLine();
+            //int m = 0;
+            //bool parsed = Int32.TryParse(str, out m);
 
-            if (!parsed)
-            {
-                Console.WriteLine("숫자도 입력 못하세요!!");
-                Environment.Exit(0);
-            }
-            for (int i = 2; i < 10; i++)
-            {
-                for (int j = 1; j <= m; j++)
-                {
-                    Console.Write(j + " x " + i + " = " + i * j + "\t");
-                }
-                Console.WriteLine();
-            }
+            //if (!parsed)
+            //{
+            //    Console.WriteLine("숫자도 입력 못하세요!!");
+            //    Environment.Exit(0);
+            //}
+            //for (int i = 2; i < 10; i++)
+            //{
+            //    for (int j = 1; j <= m; j++)
+            //    {
+            //        Console.Write(j + " x " + i + " = " + i * j + "\t");
+            //    }
+            //    Console.WriteLine();
+            //}
         }
     }
 }
